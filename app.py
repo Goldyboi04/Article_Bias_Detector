@@ -20,9 +20,9 @@ if url:
             st.subheader("Predicted Sentiment:")
 
             label_map = {
-                "negative": "Left",
-                "neutral": "Center",
-                "positive": "Right"
+                "This article is from a liberal or progressive political perspective.": "Left",
+                "This article is from a centrist or neutral political perspective.": "Center",
+                "This article is from a conservative or right-leaning political perspective.": "Right"
             }
 
             if isinstance(result, list) and len(result) > 0:
